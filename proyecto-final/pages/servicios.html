@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - TechSolutions</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">TechSolutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand fw-bold" href="../index.html">TechSolutions ♻️</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
@@ -23,26 +22,34 @@
     </nav>
 
     <main class="container my-5">
-        <h2 class="text-center mb-4">Nuestros Servicios</h2>
-        <div class="row">
-            <div class="col-12 col-md-6 mb-4">
-                <ul class="list-group">
-                    <li class="list-group-item active">Reparación Hardware</li>
-                    <li class="list-group-item">Cambio de pantallas</li>
-                    <li class="list-group-item">Ampliación de RAM/SSD</li>
-                </ul>
+        <div class="text-center mb-5">
+            <h1 class="fw-bolder">Nuestros Servicios</h1>
+            <p class="lead mb-0">Soluciones técnicas para todos tus problemas digitales</p>
+        </div>
+
+        <div class="row gx-5">
+            <div class="col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=600&h=300" class="card-img-top" alt="Reparación">
+                    <div class="card-body p-4">
+                        <h2 class="card-title h4">Reparación de Hardware</h2>
+                        <p class="card-text text-muted">Cambiamos pantallas, baterías, teclados y placas base. Diagnóstico gratuito en tienda.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item active">Software</li>
-                    <li class="list-group-item">Eliminación de Virus</li>
-                    <li class="list-group-item">Recuperación de Datos</li>
-                </ul>
+            <div class="col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&h=300" class="card-img-top" alt="Software">
+                    <div class="card-body p-4">
+                        <h2 class="card-title h4">Soporte Software</h2>
+                        <p class="card-text text-muted">Eliminación de virus, reinstalación de sistemas operativos y optimización de rendimiento.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer-custom text-center"><p>&copy; 2024 TechSolutions</p></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="py-4 bg-dark mt-auto text-center"><p class="m-0 text-white">TechSolutions 2026</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
