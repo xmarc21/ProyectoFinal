@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSolutions - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>TechSolutions - Reparación y Tecnología</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">TechSolutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand fw-bold" href="#">TechSolutions ♻️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
@@ -22,49 +24,50 @@
         </div>
     </nav>
 
-    <header class="hero text-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-lg-start">
-                    <h1 class="display-4 fw-bold">Reparación Digital Experta</h1>
-                    <p class="lead">Recuperamos tus dispositivos con tecnología punta y garantía de sostenibilidad.</p>
-                    <a href="pages/contacto.html" class="btn btn-primary btn-lg">Pedir Cita</a>
+    <header class="py-5 bg-light border-bottom">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bolder mb-2">Tecnología que dura para siempre</h1>
+                    <p class="lead text-muted mb-4">Reparamos tus dispositivos con piezas originales y vendemos equipos reacondicionados con garantía total. Únete a la economía circular.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="pages/servicios.html">Ver Servicios</a>
+                        <a class="btn btn-outline-dark btn-lg px-4" href="pages/contacto.html">Cita Previa</a>
+                    </div>
                 </div>
-                <div class="col-lg-6 mt-3 mt-lg-0">
-                    <img <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&h=400" alt="Tecnología" class="img-fluid rounded shadow">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&h=400" class="img-fluid rounded-3 shadow my-5" alt="Técnico trabajando">
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container my-5">
-        <div class="row text-center">
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 p-3 shadow-sm">
-                    <h3>🚀 Rápido</h3>
-                    <p>Diagnóstico en menos de 24 horas.</p>
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=300&h=200" class="img-fluid rounded mb-3" alt="Hardware">
+                    <h2 class="h4 fw-bolder">Hardware Premium</h2>
+                    <p>Componentes de alta calidad para que tu equipo rinda como el primer día.</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 p-3 shadow-sm">
-                    <h3>🛡️ Seguro</h3>
-                    <p>Garantía de 6 meses en reparaciones.</p>
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=300&h=200" class="img-fluid rounded mb-3" alt="Seguridad">
+                    <h2 class="h4 fw-bolder">Seguridad Total</h2>
+                    <p>Protegemos tus datos privados durante cualquier proceso de reparación.</p>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card h-100 p-3 shadow-sm">
-                    <h3>🌱 Eco</h3>
-                    <p>Reducimos la basura electrónica.</p>
+                <div class="col-lg-4 text-center">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&h=200" class="img-fluid rounded mb-3" alt="Sostenibilidad">
+                    <h2 class="h4 fw-bolder">Eco-Friendly</h2>
+                    <p>Reducimos la basura electrónica dándole una segunda vida a tus gadgets.</p>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="footer-custom text-center">
-        <p>&copy; 2024 TechSolutions - Proyecto 2ª Evaluación</p>
+    <footer class="py-5 bg-dark">
+        <div class="container px-5 text-center"><p class="m-0 text-white small">Copyright &copy; TechSolutions 2026</p></div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
