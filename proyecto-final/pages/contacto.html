@@ -3,51 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - TechSolutions</title>
+    <title>Contacto | TechSolutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">TechSolutions ♻️</a>
-            <ul class="navbar-nav ms-auto d-flex flex-row gap-3">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="fas fa-microchip text-primary"></i> TechSolutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main class="container my-5 px-5">
-        <div class="bg-white rounded-3 shadow-lg p-4 p-sm-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="fw-bolder">¿Hablamos?</h2>
-                    <p class="text-muted mb-4">Envíanos tus dudas y te responderemos en menos de 2 horas laborables.</p>
+    <header class="bg-dark text-white py-4 border-bottom border-secondary">
+        <div class="container">
+            <h1 class="h2 fw-bold mb-0">Hablemos de tu equipo</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col-lg-6 bg-white p-5 d-flex align-items-center">
+                <div class="px-lg-5 w-100">
+                    <h3 class="fw-bold mb-4">Abre un Ticket de Asistencia</h3>
+                    <p class="text-muted mb-4">Rellena los datos de tu dispositivo y el fallo que presenta. Te enviaremos una estimación en menos de 2 horas laborales.</p>
+                    
+                    <div class="alert alert-primary mb-4" role="alert">
+                        <i class="fas fa-phone me-2"></i><strong>Llamada Directa:</strong> <span class="fw-bold">+34 923 456 789</span>
+                    </div>
+                    
                     <form>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Nombre completo">
-                            <label for="name">Nombre completo</label>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Nombre completo</label>
+                                <input type="text" class="form-control bg-light border-0" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold small">Teléfono</label>
+                                <input type="tel" class="form-control bg-light border-0" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">Tipo de Dispositivo</label>
+                                <select class="form-select bg-light border-0">
+                                    <option>Ordenador Portátil / PC</option>
+                                    <option>Teléfono Móvil</option>
+                                    <option>Consola de Videojuegos</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold small">¿Qué le ocurre?</label>
+                                <textarea class="form-control bg-light border-0" rows="5" placeholder="Ej: No da imagen, se calentó mucho y se apagó, cayó al agua..." required></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">Enviar Solicitud</button>
+                            </div>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="email@ejemplo.com">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" placeholder="Tu mensaje..." style="height: 10rem"></textarea>
-                            <label for="message">Mensaje</label>
-                        </div>
-                        <button class="btn btn-primary btn-lg w-100" type="submit">Enviar Solicitud</button>
                     </form>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=600&h=800" class="img-fluid rounded-3" alt="Contacto">
-                </div>
+            </div>
+            <div class="col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/911/466/non_2x/customer-assistance-icon-customer-care-free-vector.jpg" class="img-fluid" alt="Asistencia al cliente">
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer class="py-4 bg-dark mt-auto text-center text-white">TechSolutions 2026</footer>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">TechSolutions</h5>
+                    <p class="text-white-50">Reparación profesional de dispositivos electrónicos.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-white-50 text-decoration-none">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p class="text-white-50"><i class="fas fa-phone me-2"></i><a href="tel:+34923456789" class="text-white-50 text-decoration-none">+34 923 456 789</a></p>
+                    <p class="text-white-50"><i class="fas fa-envelope me-2"></i>info@techsolutions.es</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 TechSolutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
