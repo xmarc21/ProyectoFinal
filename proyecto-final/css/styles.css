@@ -1,18 +1,110 @@
+:root {
+    --primary: #0d6efd;
+    --dark: #121417;
+    --light-gray: #f4f6f8;
+}
 
 body {
+    background-color: var(--light-gray);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+.bg-gradient-dark { 
+    background: linear-gradient(135deg, #1a1d20 0%, #000000 100%); 
+}
+
+.bg-gradient-primary { 
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%); 
+}
+
+section {
+    margin: 0;
+}
+
+footer {
+    background-color: #1a1d20 !important;
+}
+
+.service-card {
+    border-top: 4px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.8rem;
 }
-main {
-    flex: 1;
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.navbar-brand {
-    letter-spacing: 1px;
+
+.nav-link {
+    transition: color 0.3s ease;
 }
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(13, 110, 253, 0.3);
+}
+
 .card {
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary) !important;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .service-card {
+    animation: fadeIn 0.5s ease;
 }
